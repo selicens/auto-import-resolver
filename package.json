@@ -1,7 +1,7 @@
 {
   "name": "@antdv-next/auto-import-resolver",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@10.18.3",
   "description": "antdv-next auto import resolver based on unplugin-vue-components",
   "homepage": "https://github.com/antdv-next/auto-import-resolver#readme",
