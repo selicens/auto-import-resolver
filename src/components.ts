@@ -13,7 +13,7 @@ export default {
   ACol: 'Col',
   ARow: 'Row',
   ABadge: 'Badge',
-  ABadgeRibbon: 'Badge',
+  ABadgeRibbon: 'BadgeRibbon',
   ATag: 'Tag',
   ACheckableTag: 'CheckableTag',
   ALayout: 'Layout',
