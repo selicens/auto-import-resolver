@@ -55,7 +55,7 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
 
       if (opts.resolveIcons && icons.includes(name)) {
         return {
-          name,
+          as: name,
           from: '@antdv-next/icons',
         }
       }
@@ -67,8 +67,7 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
         }
 
         return {
-          name: 'default',
-          as: importName,
+          as: name,
           from: `antdv-next/dist/${importName.toLowerCase()}/index`,
         }
       }
