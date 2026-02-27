@@ -67,8 +67,9 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
         }
 
         return {
-          name: importName,
-          from: 'antdv-next',
+          name: 'default',
+          as: importName,
+          from: `antdv-next/dist/${importName.toLowerCase()}/index`,
         }
       }
     },
