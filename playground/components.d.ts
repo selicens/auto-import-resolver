@@ -13,6 +13,8 @@ declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('antdv-next/dist/button/index')['default']
     ADivider: typeof import('antdv-next/dist/divider/index')['default']
+    AImage: typeof import('antdv-next/dist/image/index')['default']
+    AImagePreviewGroup: typeof import('antdv-next/dist/image/index')['ImagePreviewGroup']
     ATypography: typeof import('antdv-next/dist/typography/index')['default']
     ATypographyLink: typeof import('antdv-next/dist/typography/index')['TypographyLink']
     ATypographyParagraph: typeof import('antdv-next/dist/typography/index')['TypographyParagraph']
