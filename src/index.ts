@@ -69,7 +69,7 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
 
         return {
           name: asName,
-          as: componentMap[name]![0]!.as,
+          as: name,
           from: `antdv-next/dist/${componentMap[name]![0]!.path}/index`,
         }
       }
