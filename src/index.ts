@@ -60,17 +60,17 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
         }
       }
 
-      const importName = componentMap[name][0].name
+      const importName = componentMap[name]![0]!.name
       if (importName) {
         if (isExclude(importName, opts.exclude)) {
           return
         }
-        const asName = componentMap[name][0].as || 'default'
+        const asName = componentMap[name]![0]!.as || 'default'
 
         return {
           name: asName,
-          as: componentMap[name][0].as,
-          from: `antdv-next/dist/${componentMap[name][0].path}/index`,
+          as: componentMap[name]![0]!.as,
+          from: `antdv-next/dist/${componentMap[name]![0]!.path}/index`,
         }
       }
     },
