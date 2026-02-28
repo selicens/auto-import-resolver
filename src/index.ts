@@ -55,20 +55,21 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
 
       if (opts.resolveIcons && icons.includes(name)) {
         return {
-          name,
-          from: '@antdv-next/icons',
+          as: name,
+          from: `@antdv-next/icons/icons/${name}`,
         }
       }
 
-      const importName = componentMap[name]
+      const importName = componentMap[name][0].name
       if (importName) {
         if (isExclude(importName, opts.exclude)) {
           return
         }
 
         return {
-          name: importName,
-          from: 'antdv-next',
+          name: 'default',
+          as: componentMap[name][0].as,
+          from: `antdv-next/dist/${componentMap[name][0].path}/index`,
         }
       }
     },
