@@ -65,9 +65,10 @@ export function AntdvNextResolver(options?: AntdvNextResolverOptions): Component
         if (isExclude(importName, opts.exclude)) {
           return
         }
+        const asName = componentMap[name][0].as || 'default'
 
         return {
-          name: 'default',
+          name: asName,
           as: componentMap[name][0].as,
           from: `antdv-next/dist/${componentMap[name][0].path}/index`,
         }
