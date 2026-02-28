@@ -4,7 +4,10 @@ const blockContent = `AntV 是蚂蚁集团全新一代数据可视化解决方�
 </script>
 
 <template>
-  <a-typography d>
+  <a-button @click="()=>{
+    // TODO
+  }"></a-button>
+  <a-typography>
     <a-typography-title>Introduction</a-typography-title>
 
     <a-typography-paragraph>

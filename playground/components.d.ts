@@ -11,6 +11,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AButton: typeof import('antdv-next/dist/button/index')['default']
     ADivider: typeof import('antdv-next/dist/divider/index')['default']
     ATypography: typeof import('antdv-next/dist/typography/index')['default']
     ATypographyLink: typeof import('antdv-next/dist/typography/index')['TypographyLink']
