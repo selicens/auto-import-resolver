@@ -11,14 +11,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AButton: typeof import('antdv-next/dist/button/index')['default']
-    ADivider: typeof import('antdv-next/dist/divider/index')['default']
-    AImage: typeof import('antdv-next/dist/image/index')['default']
-    AImagePreviewGroup: typeof import('antdv-next/dist/image/index')['ImagePreviewGroup']
-    ATypography: typeof import('antdv-next/dist/typography/index')['default']
-    ATypographyLink: typeof import('antdv-next/dist/typography/index')['TypographyLink']
-    ATypographyParagraph: typeof import('antdv-next/dist/typography/index')['TypographyParagraph']
-    ATypographyText: typeof import('antdv-next/dist/typography/index')['TypographyText']
-    ATypographyTitle: typeof import('antdv-next/dist/typography/index')['TypographyTitle']
+    AImage: typeof import('antdv-next')['Image']
+    AImagePreviewGroup: typeof import('antdv-next')['ImagePreviewGroup']
+    AStyleProvider: typeof import('antdv-next')['StyleProvider']
+    StepForwardOutlined: typeof import('@antdv-next/icons')['StepForwardOutlined']
   }
 }

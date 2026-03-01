@@ -14,13 +14,13 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
-    "@antdv-next/icons": "^1.0.2",
-    "antdv-next": "^1.0.5",
+    "@antdv-next/icons": "^1.0.3",
+    "antdv-next": "^1.1.0",
     "vue": "^3.5.29"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^24.10.13",
+    "@types/node": "^24.11.0",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/tsconfig": "^0.8.1",
     "npm-run-all2": "^8.0.4",
@@ -32,4 +32,3 @@
     "vue-tsc": "^3.2.5"
   }
 }
-
